@@ -110,11 +110,29 @@
                                     <div class="header-form-heading-bg">
                                         <h4 class="center"><strong>9</strong> SPOTS LEFT FOR APRIL 24th</h4>
                                     </div>
-                                    <div class="header-contact-bg-pad">
+                                    <div class="successMessage" style="display: none">
+                                        <div style="padding: 70px">
+                                            <h4 class="text-center">Sent Successfully!</h4>
+                                            <h4 class="text-center" style="color: #FF1493">We received your request. You'll hear from us shortly.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="serverFailMessage" style="display: none">
+                                        <div style="padding: 70px">
+                                            <h4 class="text-center" style="color: #FF1493">Ooops! Something broke.</h4>
+                                            <h4 class="text-center">We're unable to receive your request. We apologize. This is totally on us. Please call or text us directly at: (201) 503-3330</h4>
+                                        </div>
+                                    </div>
+                                    <div class="header-contact-bg-pad lead-form-fields">
                                         <!--================= NAME INPUT BOX HERE ====================-->
                                         <div class="form-div form-bottom-1">
                                             <i class="fa fa-user"></i>
-                                            <input class="form-control form-text" type="text" name="name" value="" placeholder="Please Enter Name" required />
+                                            <input class="form-control form-text" type="text" name="first_name" value="" placeholder="Please Enter First Name" required />
+                                        </div>
+
+                                        <!--================= NAME INPUT BOX HERE ====================-->
+                                        <div class="form-div form-bottom-1">
+                                            <i class="fa fa-user"></i>
+                                            <input class="form-control form-text" type="text" name="last_name" value="" placeholder="Please Enter Last Name" required />
                                         </div>
 
                                         <!--================= EMAIL INPUT BOX HERE ====================-->
@@ -126,16 +144,10 @@
                                         <!--================= PHONE-NUMBER INPUT BOX HERE ====================-->
                                         <div class="form-div phoneno-bottom error-div">
                                             <i class="fa fa-phone" aria-hidden="true"></i>
-                                            <input class="form-control form-text phoneno" name="phoneno" placeholder="Phone Number" autocomplete="off" type="text" onkeypress="return isNumber(event)" maxlength="10" required>
+                                            <input class="form-control form-text phoneno" name="phone" placeholder="Phone Number" autocomplete="off" type="text" onkeypress="return isNumber(event)" maxlength="10" required>
                                         </div>
 
-                                        <!--================= GOALS INPUT BOX HERE ====================-->
-                                        <div class="form-div goals-bottom error-div">
-                                            <i class="fa fa-trophy" aria-hidden="true"></i>
-                                            <input class="form-control form-text goals" name="goals" placeholder="Your Fitness Goals" autocomplete="off" type="text" onkeypress="return isNumber(event)" maxlength="255">
-                                        </div>
-
-                                        <p class="left note-text ls">We will contact you shortly for a brief consultation. You will then have the option to register for the next tone+burn bootcamp series.</p>
+                                        <p class="left note-text ls">We will contact you shortly for a brief consultation. You will then have the option to register for the next <strong>tone+burn bootcamp</strong> series.</p>
 
                                         <!--============= SUCESSS AND FAILURE MESSAGE DISPLAY HERE ========-->
                                         <div class="left"> <span class="form-success sucessMessage  form-error-top"> </span> <span class="form-failure failMessage  form-error-top"> </span>
@@ -143,7 +155,8 @@
                                     </div>
 
                                     <!--================= SUBMIT BUTTON HERE ====================-->
-                                    <div>
+                                    <div class="lead-form-fields">
+                                        <input type="hidden" name="start_date" value="April 24th">
                                         <input type="submit" class="submit-btn contact-form-submit" name="submit" value="APPLY NOW">
                                     </div>
                                 </div>
