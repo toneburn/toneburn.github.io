@@ -91,6 +91,9 @@ $(document).on('ready', function() {
                             if (data) {
                                 $(form).find('.lead-form-fields').hide().css("display", "none");
                                 $(form).find('.successMessage').show().css("display", "block");
+                                if (typeof fbq == 'function') {
+                                  fbq('track', 'Lead');
+                                }
                             } else {
                                 $(form).find('.lead-form-fields').hide().css("display", "none");
                                 $(form).find('.serverFailMessage').show().css("display", "block");
